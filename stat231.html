@@ -1,0 +1,334 @@
+<h1 id="stat-231">STAT 231</h1>
+
+
+
+<h4 id="lecture-1-sep-8-2017">Lecture 1: Sep 8, 2017</h4>
+
+<p>STAT 230 question: A fair coin is tossed 100 times. Find the probability that we have exactly 60 heads.  <br>
+STAT 231 question: Say we have a coin and toss it 100 times. We observe 60 heads. What can we say about the “fairness” of the coin? </p>
+
+<p>In STAT 230, population =&gt; sample. (Deductive) <br>
+In STAT 231, sample =&gt; population. (Inductive)</p>
+
+<p><em>Example 1</em>: Baseball - The disappearance of the 400 hitter.  <br>
+Batting average (BA) = # of successes / # of attempts <br>
+Batting champion = guy with highest batting average in a season <br>
+<script type="math/tex" id="MathJax-Element-345"> \leq 1941</script>: 13 batting champions with score <script type="math/tex" id="MathJax-Element-346">\geq 0.4</script> <br>
+<script type="math/tex" id="MathJax-Element-347"> > 1941</script>: 0 <br>
+Why did the 400 hitter disappear? Will we ever see a 400 hitter again?  <br>
+Reason: hitters and pitchers both got better, making 400 hits almost impossible. </p>
+
+<p><em>Example 2</em>: Challenger Disaster</p>
+
+<p><em>Example 3</em>: Testing of claims <br>
+Are experts truly experts?  <br>
+eg. weather Forecasters, ESPN pundits, stock predictions</p>
+
+<p><em>Example 4</em>: correlation unequals causation <br>
+How can we make the logical leap from correlation to causation? </p>
+
+
+
+<h4 id="lecture-2-sep-11-2017">Lecture 2: Sep 11, 2017</h4>
+
+<p>Empirical studies: result changes from experiments to experiments</p>
+
+<p><em>Example 1</em>: Approval rating of Trump <br>
+Approval rating = # of people who says yes / total # of people interviewed <br>
+<em>Example 2</em>: Test claims of drug companies <br>
+<em>Example 3</em>: Predict number of km before tune-up</p>
+
+<p>Two types of empirical study: </p>
+
+<ul>
+<li>Experimental: data collector has control over some of the variables (physical sciences) </li>
+<li>Observational: data collector has no control over the variables (social sciences) <br>
+<ul><li>Sample surveys: the population is finite and theoretically knowable</li></ul></li>
+</ul>
+
+<p>Errors are inevitable in empirical studies. We try to quantify and minimize errors.</p>
+
+<p>Definitions: </p>
+
+<ul>
+<li>Unit: evrey member of the population</li>
+<li>Variate: property of the unit we care about <br>
+<script type="math/tex" id="MathJax-Element-348">  
+y_i=   
+\begin{cases}
+    0,& \text{if does not approve} \\
+    1,  & \text{if does}
+\end{cases}  
+</script></li>
+<li><p>Attribute: a function of the variate <br>
+<script type="math/tex" id="MathJax-Element-349">y_1, \dotsc, y_n  = f(y_1, \dotsc, f_n) = \text{attribute}</script></p>
+
+<p>For example, we have the variates <br>
+<script type="math/tex" id="MathJax-Element-350">y_i = </script> salary of individual <script type="math/tex" id="MathJax-Element-351">i</script>  <br>
+A possible attribute is the average of the <script type="math/tex" id="MathJax-Element-352">y_i</script>’s. </p></li>
+</ul>
+
+<p>Types of data</p>
+
+<ul>
+<li>categorical <br>
+<ul><li>binary: two categories</li>
+<li>ordinal: categorical variables have an underlying order</li></ul></li>
+<li>numerical <br>
+<ul><li>discrete: can only take integer values; eg. counting</li>
+<li>continuous: can only take real values; eg. measuring</li></ul></li>
+</ul>
+
+<p>The attributes of population will generally be unknown and denoted by Greek letters.  <br>
+The attributes of sample can be calculated; they are denoted by English letters.  <br>
+    <script type="math/tex" id="MathJax-Element-353">\mu =</script> population mean <br>
+    <script type="math/tex" id="MathJax-Element-354">\bar{y} =</script> sample mean</p>
+
+<p>We try to summarize data and extract important information through the following properties: </p>
+
+<ul>
+<li>measures of central tendency: center</li>
+<li>measures of dispersion: data spread</li>
+<li>measures of skewness: data symmetry</li>
+<li>measues of kurtosis: how common are the extreme observations; how long are the tails</li>
+</ul>
+
+
+
+<h4 id="lecture-3-sep-13-2017">Lecture 3: Sep 13, 2017</h4>
+
+<p><strong>Measure of Location (Central Tendency)</strong> <br>
+Data set: <script type="math/tex" id="MathJax-Element-355">\{y_1, ..., y_n\}</script> <br>
+Sample mean:  <script type="math/tex" id="MathJax-Element-356">\bar{y} = \frac{1}{n} \sum^n_{i=1} y_i</script></p>
+
+<p>Properties of sample mean: </p>
+
+<ol>
+<li><p>The sum of the deviations of all observations fromthe sample mean is 0 <br>
+<script type="math/tex" id="MathJax-Element-357">(y_1 - \bar{y}) + \dotsc + (y_n - \bar{y}) = \sum^n_{i=1}(y_i - \bar{y}) = 0</script></p></li>
+<li><p>Say we have <script type="math/tex" id="MathJax-Element-358">x_1, \dotsc, x_n</script> such that <script type="math/tex" id="MathJax-Element-359">y_i = a+bx_i</script>. Then, <script type="math/tex" id="MathJax-Element-360">\bar{y} = a+b\bar{x}</script>.  <br>
+<em>Proof</em>: Since <script type="math/tex" id="MathJax-Element-361">y_i = a+bx_i</script>,  <br>
+<script type="math/tex" id="MathJax-Element-362">\sum y_i = \sum(a+bx_i) = \sum a + b \sum{x_i}</script>,  <br>
+so <script type="math/tex" id="MathJax-Element-363">\bar{y} = \frac{na}{n} + \frac{b \sum x_i} {n} = a+ b\bar{x}</script></p></li>
+</ol>
+
+<p>Affine Transformation and Linear Transformation</p>
+
+<p><em>Ex 2</em> <br>
+Year 1: 4%. Year 2: 8%. Year 3: 12% <br>
+Let x be the average interest rate. Then,  <br>
+<script type="math/tex" id="MathJax-Element-364">(1+x)^3 = (1+0.04)(1+0.08)(1+0.12)</script> <br>
+Solve for x. </p>
+
+<p>Geometric mean = <script type="math/tex" id="MathJax-Element-365">(y_1 \cdot \dotsc \cdot y_n)^{1/n}</script> <br>
+Arithmetic mean = <script type="math/tex" id="MathJax-Element-366">(y_1 + \dotsc + y_n) / n</script> <br>
+Harmonic mean = <script type="math/tex" id="MathJax-Element-367">\frac{2}{1/a + 1/b}</script></p>
+
+<p><em>Ex 3</em>: Harmonic mean <br>
+Travels <script type="math/tex" id="MathJax-Element-368">x</script> km at 40kmph,and <script type="math/tex" id="MathJax-Element-369">x</script> km at  60kmph.  <br>
+The average speed is <script type="math/tex" id="MathJax-Element-370">\frac{2x}{x/40 + x/60}</script></p>
+
+<p>Median (<script type="math/tex" id="MathJax-Element-371">\hat{m}</script>): middle-most observation, take mean the number of inputs is even</p>
+
+<p>Quartiles <br>
+- Q1: lower quartile; observation below which 25% of the data lies <br>
+- Q3: upper quartile; observation below which 75% of the data lies <br>
+- Percentiles: data is divided into 100 parts <br>
+- Q2: median</p>
+
+<p>Mode: observation that occurs with the maximum frequency</p>
+
+
+
+<h4 id="lecture-4-sep-15-2017">Lecture 4: Sep 15, 2017</h4>
+
+<p><strong>Measure of dispersion</strong></p>
+
+<ul>
+<li>Range = max - min</li>
+<li>Sample variance: <script type="math/tex" id="MathJax-Element-372">s^2 = \frac{\sum(y_i - \bar{y})^2}{n-1}</script></li>
+<li>The sample standard deviation is <script type="math/tex" id="MathJax-Element-373">s = \sqrt{s^2}</script> </li>
+<li><script type="math/tex" id="MathJax-Element-374">IQR = Q_3 - Q_1</script></li>
+</ul>
+
+<p>Properties of Variance</p>
+
+<ol>
+<li><p>The variance can be expressed by two expressions.  <br>
+<script type="math/tex" id="MathJax-Element-375">s^2 = \frac{1}{n-1} \sum \left( y_i - \bar{y} \right)^2 =  \frac{1}{n-1} \sum \left( y_i^2 - n \bar{y}^2 \right) </script></p></li>
+<li><p>Original data set <script type="math/tex" id="MathJax-Element-376">\{x_i\}</script>. Transformed to <script type="math/tex" id="MathJax-Element-377">\{y_i\}</script> by <script type="math/tex" id="MathJax-Element-378">y_i = a + bx_i</script>.  <br>
+Then, <script type="math/tex" id="MathJax-Element-379">s_y^2 = b^2 s_x^2</script>. </p></li>
+<li><p><script type="math/tex" id="MathJax-Element-380">IQR = Q_3 - Q_1</script> <br>
+Given percentile <script type="math/tex" id="MathJax-Element-381">p</script> and an array of data <script type="math/tex" id="MathJax-Element-382">A</script>. Arrange data set in ascending order.  <br>
+Then, let <script type="math/tex" id="MathJax-Element-383">m = (n+1) p</script> <br>
+If <script type="math/tex" id="MathJax-Element-384">m</script> is an integer, <script type="math/tex" id="MathJax-Element-385">A[m]</script> is the quantile. Else, take the mean of the two nearest observations. </p></li>
+</ol>
+
+<p><strong>Measure of Skewness</strong> <br>
+If data is symmetric, then mean = median <br>
+skewness = mean-median</p>
+
+
+
+<p><script type="math/tex; mode=display" id="MathJax-Element-386">g_1 = \frac{1/n \sum(y_i - \bar{y})^3}{ \left( 1/n \sum (y_i - \bar{y})^2 \right) ^{3/2}}</script></p>
+
+<p>mean &gt; median: possibly right skewed <br>
+mean &lt; median: possibly left skewed</p>
+
+<p><strong>Applications</strong></p>
+
+<ol>
+<li>Disappearance of 400 hitter <br>
+<ul><li>Pitchers’ improvement is not greater than batters’ improvements. This is evidenced by the average of average batters remaining constant over the years. If pitchers improved more, the average batting average would be expected to fall. </li>
+<li>It is caused by the decrease in the variance over the year. </li>
+<li>Extremes disappears, no more horrible pitchers to boost scores. </li></ul></li>
+<li>Gould <br>
+<ul><li>Diagnosed with aggressive cancer, median survival rate of 8 months. </li>
+<li>If the data is symmetric, Gould would be dead around 8 months. </li>
+<li>Assymetric data with long tails to the right =&gt; Gould survived the cancer.  <br>
+Normal Distribution</li></ul></li>
+</ol>
+
+
+
+<h4 id="lecture-5-sep-18-2017">Lecture 5: Sep 18, 2017</h4>
+
+<p><strong>Measure of Kurtosis</strong> <br>
+95% of all observations are within <script type="math/tex" id="MathJax-Element-387">\mu</script> +/- 2 <script type="math/tex" id="MathJax-Element-388">\sigma</script> <br>
+99% of all observations are within <script type="math/tex" id="MathJax-Element-389">\mu</script> +/- 3 <script type="math/tex" id="MathJax-Element-390">\sigma</script></p>
+
+<p><script type="math/tex" id="MathJax-Element-391">X \sim N (\mu, \sigma^2)</script>:  <br>
+<script type="math/tex; mode=display" id="MathJax-Element-392">\begin{align*}
+q(|X-\mu) \leq 3\sigma) &= P\left( \left|\frac{X-\mu}{\sigma} \right| \leq 3 \right) \\
+&=  P\left(  -3 \leq \frac{X-\mu}{\sigma} \leq 3 \right) \\
+&= P\left(  -3 \leq z \leq 3 \right) \\
+&= 0.99 \quad \textrm{(given by z table)}
+\end{align*}</script></p>
+
+<p>Kurtosis &gt; 3: fatter tails compared to normal distributions <br>
+Kurtosis &lt; 3: thinner tails compared to normal distributions. </p>
+
+<p>Applications: Financial data typically have kurtosis &gt; 3. </p>
+
+<p><strong>Bivariate Data</strong> <br>
+We have two variables <script type="math/tex" id="MathJax-Element-393">X</script> and <script type="math/tex" id="MathJax-Element-394">Y</script>.  <br>
+Objective: To come up with a measure that calculates the degree of association between the two variables. </p>
+
+<p><em>Categorical Variables</em> <br>
+Example: Smoking and income.  <br>
+Smoker vs. non-smoker, poor vs. rich</p>
+
+<p><script type="math/tex" id="MathJax-Element-395">A</script> and <script type="math/tex" id="MathJax-Element-396">B</script> are independent if <script type="math/tex" id="MathJax-Element-397">P(A|B) = P(A)</script> and <script type="math/tex" id="MathJax-Element-398">P(A|B^C) = P(A)</script>. In other words,  <br>
+<script type="math/tex; mode=display" id="MathJax-Element-399">\frac{P(A|B)}{P(A|B^C)} = 1</script></p>
+
+<p>Given the data,  <br>
+<script type="math/tex; mode=display" id="MathJax-Element-400">
+\begin{array}{c|ccc}
+ & \text{Smoker} & \text{Non-smoker} &  \\
+\hline
+\text{Poor} & y_{11} & y_{12} & y_{11}+y_{12} \\
+\text{Rich} & y_{21} & y_{22} & y_{21} + y_{22} \\
+\end{array}
+</script></p>
+
+<p>The probability of smoking given poor is <br>
+<script type="math/tex; mode=display" id="MathJax-Element-401">\begin{align*}
+P(smoking|poor) &= \frac{P(smoking, poor)}{P(poor)} \\
+&= \frac{y_{11}}{y_{11}+y_{12}}
+\end{align*}</script></p>
+
+<p>The probability of smoking given rich is <br>
+<script type="math/tex; mode=display" id="MathJax-Element-402">\begin{align*}
+P(smoking|rich) = \frac{y_{21}}{y_{21} + y_{22}}
+\end{align*}</script></p>
+
+<p>If the data is independent, the the Relative Risk (R.R) should be <br>
+<script type="math/tex; mode=display" id="MathJax-Element-403">\begin{align*}
+\frac{y_{11} / (y_{11} + y_{12})} {y_{21} / (y_{21}+y_{22})} = 1
+\end{align*}</script></p>
+
+<p>If <script type="math/tex" id="MathJax-Element-404">R.R = 1</script>, there is evidence of no association.  <br>
+If <script type="math/tex" id="MathJax-Element-405">R.R >> 1</script> or <script type="math/tex" id="MathJax-Element-406">R.R << 1</script>, there is evidence of association.  <br>
+In Chapter 7, we answer the question “how high is too high?”.</p>
+
+<p><em>Numerical Variable</em> </p>
+
+<p>Sample Correlation Coefficient:  <br>
+<script type="math/tex; mode=display" id="MathJax-Element-407">r_{xy} = \frac{\sum (x_i - \bar{x}) (y_i - \bar{y})}{ \left( \sum(x_i - \bar{x}) ^2\right) ^{1/2} \left( \sum(y_i - \bar{y}) ^2\right)^{1/2} }</script></p>
+
+<p>Example:  <br>
+<script type="math/tex" id="MathJax-Element-408">X = </script> the number of beers an individual drinks.  <br>
+<script type="math/tex" id="MathJax-Element-409">Y = </script> their mark in STAT 231. </p>
+
+<p>If <script type="math/tex" id="MathJax-Element-410">x_i > \bar{x}</script>, we would expect <script type="math/tex" id="MathJax-Element-411">y_i < \bar{y}</script>, and <script type="math/tex" id="MathJax-Element-412">(x_i - \bar{x}) (y_i - \bar{y}) < 0</script> <br>
+If <script type="math/tex" id="MathJax-Element-413">x_i < \bar{x}</script>, we would expect <script type="math/tex" id="MathJax-Element-414">y_i > \bar{y}</script>, and <script type="math/tex" id="MathJax-Element-415">(x_i - \bar{x}) (y_i - \bar{y}) < 0</script></p>
+
+<p>So the numerator tells you the direction of the relationship. </p>
+
+<p>Properties of <script type="math/tex" id="MathJax-Element-416">r</script>: </p>
+
+<ol>
+<li><script type="math/tex" id="MathJax-Element-417">|r_{xy}| \leq 1</script></li>
+<li>If <script type="math/tex" id="MathJax-Element-418">y=a+bx</script>, r = 1 (if b &gt; 0) and -1 (if b &lt; 0) <br>
+However, the reverse is not true. </li>
+</ol>
+
+
+
+<h4 id="lecture-6-sep-20-2017">Lecture 6, Sep 20, 2017</h4>
+
+<p><strong>Correlation Coefficient</strong></p>
+
+<p>Two numerical variates, <script type="math/tex" id="MathJax-Element-419">x</script> and <script type="math/tex" id="MathJax-Element-420">y</script>. To come up with a measure that calculates the direction and strength of the relationship between <script type="math/tex" id="MathJax-Element-421">x</script> and <script type="math/tex" id="MathJax-Element-422">y</script>. </p>
+
+
+
+<p><script type="math/tex; mode=display" id="MathJax-Element-423">r_{xy} = \frac{\sum (x_i - \bar{x}) (y_i - \bar{y})}{ \left( \sum(x_i - \bar{x}) ^2\right) ^{1/2} \left( \sum(y_i - \bar{y}) ^2\right)^{1/2} }</script></p>
+
+<ul>
+<li>If <script type="math/tex" id="MathJax-Element-424">r_{xy} \approx 0</script>: very little evidence of linear association. </li>
+<li>If <script type="math/tex" id="MathJax-Element-425">|r_{xy} \approx 1</script>: strong evidence of linear association. </li>
+<li><script type="math/tex" id="MathJax-Element-426">-1 \leq r_{xy} \leq 1</script>. </li>
+<li>If <script type="math/tex" id="MathJax-Element-427">y=a+bx_i</script>, <script type="math/tex" id="MathJax-Element-428">r_{xy} = 1</script> if <script type="math/tex" id="MathJax-Element-429">b> 0 and </script>r_{xy} = -1<script type="math/tex" id="MathJax-Element-430"> if </script>b&lt; 0</li>
+<li>It is possible that r_{xy} misses the non-linear part of the relationship. </li>
+</ul>
+
+<p><strong>Graphical Data Summaries</strong> <br>
+Pictorial representation of the data set, to identify its main properties. </p>
+
+<p>Histogram: </p>
+
+<ul>
+<li>data is grouped</li>
+<li>x-axis: data divided into groups</li>
+<li>y-axis: some function of the frequency of that group</li>
+</ul>
+
+<p>Density Histogram (Relative frequency histogram)</p>
+
+<ul>
+<li>Area of rectangle: relative frequency of that group</li>
+<li>y-axis: density; height is chosen in such a way such that the area of the rectangle is the relative frequency</li>
+<li>Each class needs not be of the same width. </li>
+<li>The area under the histogram = 1 and we would be able to compare it with knowntheoretical distribution with known desnity function</li>
+<li>It tells us the shape of the r.v. from which the data is drawn. </li>
+<li>Disadvantages: The shape depends on how the groups were selected. </li>
+</ul>
+
+<p>Box-Plots</p>
+
+<ul>
+<li>We use box plots to compare two different data sets. </li>
+<li>Box and Whiskers plot</li>
+<li>Upper whisker stops at the maximum value of the data set that is less or equal to <script type="math/tex" id="MathJax-Element-431">Q_3 + 1.5IQR</script></li>
+<li>Lower whisker stops at minimum point of data set that is greater or equal to <script type="math/tex" id="MathJax-Element-432">Q_1 - 1.5IQR</script>. </li>
+<li>Anything outside the two whiskers are outliers and are marked individually</li>
+<li>The box-plot gives an idea of the shape of the graph and give the fivenum summary. </li>
+</ul>
+
+<p>Empirical CDF</p>
+
+<ul>
+<li><script type="math/tex" id="MathJax-Element-433">F(y) = \frac{\textrm{# of obs.} \leq y}{n}</script>where <script type="math/tex" id="MathJax-Element-434">n</script> is the total number of observations. </li>
+<li>The graph <script type="math/tex" id="MathJax-Element-435">(y, F(y))</script> is the ECDF graph. </li>
+</ul>
