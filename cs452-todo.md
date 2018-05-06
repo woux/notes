@@ -53,4 +53,24 @@ io
 
 ioputc
 iogetc
-cursor addressing
+ansi
+
+Sensors:
+1: A1 to A8
+2: A9 to A16
+3: B1 to B8
+4: B9 to B16
+5: C1 to C8
+6: C9 to C16
+7: D1 to D8
+8: D9 to D16
+9: E1 to E8
+10: E9 to E16
+
+Todo: 
+
+Show sensors: 
+* make a queue (cbuf) of 10 items to show the 10 most recently triggered sensors (first in first out)
+    * use bit mask
+    * store sensor name -> bit mask in an array
+* Draw a track layout using ASCII art and highlight the recently triggered sensors
