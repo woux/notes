@@ -1,0 +1,119 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsthm}
+\usepackage{fullpage}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\usepackage{amssymb, clrscode3e}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}{Claim}
+
+\usepackage{parskip}
+
+\begin{document}
+
+Units: 
+\begin{enumerate}
+    \item Floating points
+\item Interpolation
+\item Ordinary Differential Equations
+\item Fourier Analysis
+\item Numerical Linear Algebra
+
+\end{enumerate}
+
+Grades: Assignment: 32\%, 4\%, Midterm: 28\%, Exam: 40\%
+
+Midterm at June 26, 7pm
+
+Printed course notes at Media doc in DC. 
+
+
+\section{Floating Point Arithmetic}
+
+Real numbers are: 
+\begin{itemize}
+\item infinite in extent
+\item infinite in density
+\end{itemize}
+
+Floating point system is an approximate representation of real numbers using a finite number of bits. 
+
+Consider the sum
+$$12 + \sum^{100}_{i=1} 0.01 = 13$$
+
+If we perform the sum one addition at a time, retaining two digts of accuracy at each step: 
+$$12 + 0.01 + 0.01 + \dots $$
+
+The numerical answer is 12. Performing the addition from the opposite direction will yield the correct answer. 
+
+We can express a real number as an infinite expansion relative to some base $\beta$. After expressing the real number in the desired base $\beta$, we multiply it by a power of $\beta$ to shift it into a normalized form
+
+$$0.d_1d_2d_3d_4 \dots \times \beta^\rho$$
+
+where
+\begin{itemize}
+\item $d_i$ are digits in base $B$, i.e., $0 \leq d_i \le \beta$
+\item normalized means $d_1 \neq 0$
+\item exponent $\rho$ is an integer
+\end{itemize}
+
+\subsection{Floating Point System}
+
+Density (or precision) is bounded by the number of digits, $t$  
+Extent (or range) is bounded by limiting the range of values for $\rho$. 
+
+Our floating point representation then has the form: 
+$$  
+\left\{\begin{aligned}  
+&\pm 0.d_1 d_2 \dots d_t \times \beta^\rho &&: L \leq \rho \leq U, d_1 \neq 0\\  
+&0 
+\end{aligned}  
+\right.$$
+
+The four integer parameters $\{\beta, t, L, U\}$ characterize a specific floating point system, $F$. 
+
+
+If $\rho > U$ or $\rho < L$, our system cannot represent the number. When an arithmetic operation generates such a number, it's called overflow or underflow
+
+The floating point standards are almost always directly implemented in the hardware. The two most common standardized floating point systems are: 
+\begin{itemize}
+    \item IEEE single precision (32 bits): $\beta = 2, t=24, L=-126, U=127$
+    \item IEEE double precision (64 bits): $\beta = 2, t=53, L=-1022, U=1033$
+\end{itemize}
+
+\begin{itemize}
+    \item Fixed number of digits are the decimal; integer representation scaled by a fixed scale factor; eg. $10234 \times 10^{-3}$
+    \item Floating point number systems let the radix point float to represent a wider range.  
+    \item Floating point numbers are not evenly spaced
+\end{itemize}
+
+
+\subsection{Measuring Errors}
+
+Absolute error: 
+$$E_{abs} = | x_{exact} - x_{approx} |$$
+
+Relative error: 
+$$E_{rel} = \frac{|x_{exact}| - |x_{approx}|} {|x_{exact}|}$$
+
+
+Relative error is more useful: 
+\begin{itemize}
+\item independent of magnitudes of numbers involved
+\item related to the number of significant digits in the result
+\end{itemize}
+
+A result is correct to approximately $s$ digits if $E_{rel} \approx 10^{-s}$ or $$0.5 \times 10^{-s} \leq E_{req} \le 5 \times 10^{-s}$$
+
+
+
+\end{document}
+
