@@ -1,49 +1,28 @@
-## Grading schemes
+k1: 
+1. context switch in and out of kernel
+2. collection of task descriptors
+3. request mechanism for providing arguments and returning results
+4. priority queues for scheduling
+5. kernel algorithms for manipulating task descriptors and priority queues
 
-CS 370: 
-* 4 assignments (8% each), midterm (28%), final (40%)
-* Assignment 1 due May 28
-* Midterm on June 26, 7pm
-* printed course notes
+Kernel primitives: 
 
-CS 486: 
-* Assignments (4 @ 12.5% each = 50%)
-* Final exam (50%)
-* A1 due Tuesday, May 29 by 5pm
+`int Create (int priority, void (*code))`
 
-CS 456:  
-* Assignments (3x10%), midterm (25%), final (35%), quizzes (10%)  
-* A1 due June 13
-* Midterm on June 22, 4:30pm
-* textbook
+`int MyTid()`
 
-CS 452: 
-* Assignment 0 (5%), Kernel (30%), Project (35%), Final (30%)
-* Kernel Part 1: May 25
-* Kernel Part 2: May 28
-* Kernel Part 3: June 4
-* Kernel part 4: June 18
-* Train control Part 1: June 28
-* Train control Part 2: July 12
-* Project proposal: July 11
-* Project demo: ~July 26
+`int MyParentTid()`
 
-PSYCH 101: 
-* Syllabus quiz (1%), experimental learning (4% + 2% bonus), five-minute papers (5%), midterm (45%), final (45%)
-* Kraus textbook + lecture notes
-* Midterm on June 18, 6:30-9:20 pm
+`void Pass()`
 
-## On the Plate
-* CS 370:
-    * notes
-    * Assignment 1 due May 28
-* CS 458: 
-    * notes
-* CS 486: 
-    * notes
-* CS 452 Kernel part 1
-    * notes
-    * figure out what to do for kernel part 1
-* psych 101: 
-    * syllabus quiz
-    * textbook notes
+`void Exit()`
+
+User Tasks
+
+1. First user task
+    * create two test tasks at lower priority
+    * create two test tasks at higher priority
+    * lower priority tasks created before higher priority tasks
+    * first user task call Exit
+
+2. Oher Tasks

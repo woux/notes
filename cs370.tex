@@ -113,6 +113,20 @@ Relative error is more useful:
 
 A result is correct to approximately $s$ digits if $E_{rel} \approx 10^{-s}$ or $$0.5 \times 10^{-s} \leq E_{req} \le 5 \times 10^{-s}$$
 
+For any given FP system $F$, there exists an upper bound $E$ such that 
+$$(1-E)|x| \leq |fl(x) | \leq (1+E) |x|$$. 
+
+Machine epsilon / unit round-off error: The maximum relative error $E$ for a FP system. Small value such that $fl (1+E) > 1$ under $F$. 
+
+In an FP system $F(\beta, t, Lu, U)$ with rounding to the nearest, $$E = \frac{1}{2} \beta^{1-t}$$
+
+With truncation, 
+$$E = \beta^{1-t}$$
+
+Thus, we have the signed relative error $\delta = (fl(x) - x) / x$, or $$fl(x) = x (1+\delta)$$ with $|\delta| \leq E$. 
+
+For practical purpose, we only care about the order of magnitude of $E$ 
+
 
 
 \end{document}
