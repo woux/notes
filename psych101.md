@@ -807,6 +807,25 @@ Persuasive Techniques
 
 ## Physical development in-utero
 
+Fetus Development
+1. Conception
+  - two nuclei (sperm cell, ovum) fuse to form zygote
+  - ovum releases chemical signal to prevent other sperm from entering
+2. Germinal Stage
+  - 2 weeks after conception, zygote (now called blastocyst) travels down fallopian tubes toward uterus
+  - blastocyst splits into two groups of cells - form fetus and placenta
+3. Embryonic Stage
+  - weeks 2-8
+  - major physical structures (heart, nervous system) develop
+  - neural tube formed; major divisions of brain are apparent at 4 weeks
+4. Fetal stage
+  - 8 weeks to birth
+  - muscles develop, fetus starts to move
+  - sleeping and waking cycles
+  - outer surface of cerebral cortex wrinkles
+  - myelin starts forming around 25-26 weeks
+
+Factors
 
 ## Infant development
 
