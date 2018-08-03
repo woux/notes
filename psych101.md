@@ -940,5 +940,56 @@ Stages:
     * cope with mortality, look back on life with contentment
 
 ## Teaching prosocial behaviour
+ 
+Behavioural systems: 
+* Attachment behavioural system (ABS): meet own needs for security
+* Caregiving behavioural system (CBS): meet needs of others
+
+ABS seems to inhibit CBS, so someone who feels loved and secure will be more able to help others. 
+ 
+Empathy, perspective taking
+* Inductive discipline: explain consequences of child's actions for other people, activating empathy for others. 
+
+Model prosocial behaviour: exposure to prosocial media
+
+Reward prosocial heaviour with social approval
+* overreward leads to internalization of conditional regard (introjection )
+
 
 ## Observational learning
+
+Latent learning: learning not immediately expressed by a response
+
+Observational learning: changes in beheaviour and knowledge as result of watching others
+
+
+Examples: 
+* rat smell breath of other rats who have just returned from foraging, preferentially seek out that smell
+* human children avoid food parents act disgusted by
+
+Media: strong link between exposure to violent media and likelihood of aggressing
+* Bobo doll study: more likely to imitate aggression
+* hot sauce study: violent lyrics lead to increase in aggressive/hostile thoughts
+* Columbine copycats, anniversary shooting
+* longitudinal studies of real-life behaviour
+
+Strongest for those who are already prone to violent behaviour
+
+Predict power of media much less than biological, social, economic and psychological factors
+
+Reasons
+* dehumanization of "enemies"
+* desensitization to violence, blood, conflict
+  * numbness, decreased empathy, decreased prosocial behaviour
+* normalization, give aggressive individuals "permission" to express aggression
+
+Prosocial media: prosocial video games / music make people more helpful
+
+Other impacts
+* prejudice and discrimination
+* beliefs about relationships
+* beliefs about intelligence and growth
+* attitudes toward products and people
+* cultural norms and scripts
+
+
