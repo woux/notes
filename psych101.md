@@ -825,15 +825,119 @@ Fetus Development
   - outer surface of cerebral cortex wrinkles
   - myelin starts forming around 25-26 weeks
 
-Factors
+Factors in fetal development
+* Mother's diet: calories, supplements
+  * malnourishment predicts ADHD, cognitive deficits, illness and disease, schizophrenia, antisocial personality disorder, etc.
+* Exposure to teratogens: substances that impair process of development
+  * thalimoide: sedative used for morning sickness in 1950s, led to defects like phocomelia
+  * alcohol: fetal alcohol syndrome (abnormalities in growth, facial development, mental functioning)
+  * tobacco: increases risk of miscarriage, premature birth, SIDS
+
+
 
 ## Infant development
 
+Brain
+* newborns have similar number of neurons to adult (100 billion)
+* no neural pathways; very few connection between neurons- formed and strengthened based on learning/experience
+* babies have high degree of neuroplasticity- brain changes depending on environment
+
+Senses
+* visual ascuity poor at birth, can only see 30cm away
+* discern color at 2 months
+* like looking at faces
+* babies prefer mother's voice at birth, esp when muffled
+* smell and taste fairly well-developed at birth; pref sweet
+
+Motor functions
+* develop reflexes while in womb
+* lose reflex around 6 months as voluntary movement takes over
+
+Self-awareness
+* 18-24 months, toddlers begin to recognize their individuality and others as separate beings
+* rouge test
+* toddlers are egocentric- lack cognitive ability to consider others
+* at age 4-5, develop theory of mind: ability to understand that other people have thoughts, beliefs and perspectives different from one's own
+
+
 ## Piaget's theory of cognitive development
+
+Learning occurred via 2 processes: 
+* Assimilation: fitting new information onto existing belief system
+* Accomodation: modify belief structure based on new info
+
+1. Sensorimotor Stage (0-2)
+  * Thoughts based on immediate sensory/motor experiences
+  * immersion in presence (not past/future)
+  * no object permanence (understanding that object continues to exist even if it cannot be sensed)
+
+2. Preoperational Stage (2-7)
+  * learning language development, pretend play, conversation concepts
+  * Conservation: knowledge that quantity or amount of object is not the same as physical arrangement of that object (water poured onto 2 cups)
+    * abtract thinking: difficult for kids
+    * better at task when object matters to them
+
+3. Concrete Operational Stage (7-11)
+  * logical thinking & math skills
+  * classify objects according to properties
+  * understand transitivity: if x>y, y>z, then x>z
+
+4. Formal operational stage (11+)
+  * develop advanced cognitive processes like abstract reasoning and hypothetical thinking
+
+Learning
+* Sensitive period: window of time, needs to be exposed to some stimulation to develop specific ability (eg.language)
+* zone of proximal development: development is ideal when kids attempt activities just beyond their skill level, with uguidance from adults attentive to their progress
+  * scaffolding: teaching children in way that keeps them in this zone
+  * scaffolded kids learn faster and become self-sufficient earlier
 
 ## Attachment
 
+Harlow (1950s): cloth mother vs. wire mother
+
+Mother-infant relationship offers contact comfort, in additional to fulfillment of needs
+
+Secure attachment
+* child explores independently, but check in for reassurance
+* Child shows distress when caregiver leaves and avoids stranger
+* Child seeks comfort when caregiver returns
+
+Anxious attachment
+* child clings onto caregiver
+* shows great distress when caregiver leaves, fearful of stranger
+* seeks comfort upon return, but may push caregiver away, not allowing distress to be alleviated
+
+Avoidance attachment
+* child behaves as though they don't need caregiver; oblivious to caregiver
+* no distress when caregiver leaves, do not seek contact upon return
+
+Disorganized attachment
+* child learned through inconsistent/abusive parenting that caregivers are sources of both fear and comofrt
+* strong ambivalance toward caregiver: sometimes seek comfort, sometimes wanting to escape
+
 ## Psychosocial development
+
+Erik Erikson: 
+* At different age, people face particular developmental challenges based on emotional needs at the time
+* If needs not met, deficit may arise in cognitive functioning
+
+Stages:
+1. Infancy: trust vs mistrust
+    * sense of security, comfort
+2. Toddlerhood: autonomy vs shame
+    * explore ways to exercise independence
+3. Early childhood: initiative vs guilt
+    * take responsibility for oneself
+4. Childhood: industry vs inferiority
+    * regulating self and actions to achieve goals, gaining sense of being actively engaged in own life
+5. Adolescence: identity vs role confusion
+    * achieving sense of self, future direction
+6. Young adulthood: intimacy vs isolation
+    * develop ability to initiate and maintain intimate relationship
+7. Adulthood: generativity vs stagnation
+    * satisfy personal/family needs, contribute to society
+8. Aging: integrity vs despair
+    * cope with mortality, look back on life with contentment
 
 ## Teaching prosocial behaviour
 
